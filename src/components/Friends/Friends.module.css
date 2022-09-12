@@ -1,0 +1,13 @@
+.item {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+.status{
+    font-size: 50%;
+    align-items: center;
+}
+.friendList{
+    background-color: rgb(251, 212, 84);
+    padding: 15px;
+}

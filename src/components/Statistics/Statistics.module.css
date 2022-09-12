@@ -1,0 +1,14 @@
+.statistics{
+background-color:rgb(82, 148, 227);
+
+}
+.title{
+    text-align: center;
+}
+
+.statList {
+    display: flex;
+}
+.item{
+   list-style: none;
+}
