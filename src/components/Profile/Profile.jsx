@@ -28,8 +28,8 @@ export function Profile(props) {
           <span className={style.quantity}>{views}</span>
         </li>
         <li>
-          <span class="label">Likes</span>
-          <span class="quantity">{likes}</span>
+          <span className={style.label}>Likes</span>
+          <span className={style.quantity}>{likes}</span>
         </li>
       </ul>
     </div>

@@ -7,8 +7,8 @@ const Friends = ({ friends }) => {
       {friends.map(({ avatar, name, isOnline, id }) => (
         <li className={style.item} key={id}>
               <span className={style.status}>{ isOnline?"🟢": "🔴"}</span>
-          <img class="avatar" src={avatar} alt="User avatar" width="48" />
-          <p class="name">{name}</p>
+          <img className={style.avatar} src={avatar} alt="User avatar" width="48" />
+          <p className={style.name}>{name}</p>
         </li>
       ))}
     </ul>
