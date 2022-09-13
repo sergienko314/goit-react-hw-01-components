@@ -3,10 +3,10 @@ import { Statistics } from './Statistics/Statistics';
 import  Friends  from './Friends/Friends';
 import Transactions from './Transactions/Transactions';
 
-import user from './data/user.json';
-import statistics from "./data/data.json"
-import friends from "./data/friends.json"
-import transactions from "./data/transactions.json"
+import user from '../data/user.json';
+import statistics from "../data/data.json"
+import friends from "../data/friends.json"
+import transactions from "../data/transactions.json"
 
 
 export const App = () => {
@@ -30,9 +30,10 @@ export const App = () => {
         avatar={user.avatar}
         followers= {user.stats.followers}
         views = { user.stats.views}
-        likes = { user.stats.views}
+        likes = { user.stats.likes}
       />
-      <Statistics data={statistics} />
+      <Statistics data={statistics}
+        title="Upload stats" />
       <Friends friends={friends} />
       <Transactions transactions={transactions}/>
     </div>

@@ -2,9 +2,9 @@ import style from './Statistics.module.css'
 import PropTypes from 'prop-types';
 
 
-export function Statistics({ data }) {
+export function Statistics({ data, title }) {
   return (<section className = {style.statistics}>
-    <h2 className = {style.title} >Upload stats</h2>
+    {title && <h2 className = {style.title} >{title}</h2>}
     < ul className = { style.statList } >
     {
       data.map(({ id, label, percentage }) => (
@@ -25,7 +25,10 @@ function generateRandomColor() {
 };
   
 Statistics.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
-    label:PropTypes.string,
-    percentage:PropTypes.string
+    label: PropTypes.string,
+    percentage: PropTypes.string
+  }))
+
 }

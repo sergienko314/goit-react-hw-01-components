@@ -1,5 +1,5 @@
 import style from "./Friends.module.css"
-import PropTypes from 'prop-types';
+import PropTypes, { shape } from 'prop-types';
 
 const Friends = ({ friends }) => {
   return (
@@ -18,7 +18,9 @@ const Friends = ({ friends }) => {
 export default Friends;
 
 Friends.propTypes = {
+  friends: PropTypes.arrayOf(PropTypes.shape({
     avatar: PropTypes.string,
     isOnline:PropTypes.bool,
-    name:PropTypes.string
+    name:PropTypes.string}))
+    
 }
