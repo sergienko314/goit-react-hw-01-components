@@ -1,5 +1,5 @@
 import style from "./Friends.module.css"
-import PropTypes, { shape } from 'prop-types';
+import PropTypes from 'prop-types';
 
 const Friends = ({ friends }) => {
   return (
